@@ -1,0 +1,12 @@
+(X) make the text field size in the contact form fixed
+place WhatsApp, telegram and Facebooks messages buttons on the contact form (like other means to get in touch)
+fix the size of the planet and the contact form on the full screen
+change the time line for algorithm of work
+place the cottage scene instead of the computer
+make footer (contacts, social media icons etc.)
+make another type of hamburger menu
+make busty buttons on works
+make language button in the header
+make translation (file with different data for different languages (Georgian, English's, Russians))
+Add attachment function to the contact form
+Add captcha to the contact form

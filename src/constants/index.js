@@ -19,10 +19,10 @@ import {
   starbucks,
   tesla,
   shopify,
+  threejs,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from '../assets';
 
 export const navLinks = [
@@ -42,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'Exteriror 3D Visualisation',
     icon: web,
   },
   {
-    title: 'React Native Developer',
+    title: 'Interior 3D Visualisation',
     icon: mobile,
   },
   {
-    title: 'Backend Developer',
+    title: '3D Modelling',
     icon: backend,
   },
   {
-    title: 'Content Creator',
+    title: 'Game Development',
     icon: creator,
   },
 ];
