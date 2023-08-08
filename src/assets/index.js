@@ -6,29 +6,35 @@ import web from './web.png';
 import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
+import whatsup from './whatsup.svg';
+import telegram from './telegram.svg';
 
-import css from './tech/css.png';
-import docker from './tech/docker.png';
-import figma from './tech/figma.png';
-import git from './tech/git.png';
-import html from './tech/html.png';
-import javascript from './tech/javascript.png';
-import mongodb from './tech/mongodb.png';
-import nodejs from './tech/nodejs.png';
-import reactjs from './tech/reactjs.png';
-import redux from './tech/redux.png';
-import tailwind from './tech/tailwind.png';
-import typescript from './tech/typescript.png';
-import threejs from './tech/threejs.svg';
+import vray from './tech/vray.png';
+import unity from './tech/unity.png';
+import sketchup from './tech/sketchup.png';
+import illustrator from './tech/illustrator.png';
+import threedmax from './tech/threedmax.png';
+import corona from './tech/corona.png';
+import substance from './tech/substance.png';
+import photoshop from './tech/photoshop.png';
+import unrealeng from './tech/unrealeng.png';
+import marvelous from './tech/marvelous.png';
+import zbrush from './tech/zbrush.png';
+import blender from './tech/blender.png';
+import coreldraw from './tech/coreldraw.png';
 
-import meta from './company/meta.png';
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
+import hello from './hello.png';
+import response from './response.png';
+import workme from './workme.png';
+import loveyou from './loveyou.png';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+
+import ka from './ka.svg';
+import ru from './ru.svg';
+import en from './us.svg';
 
 export {
   logo,
@@ -39,24 +45,29 @@ export {
   github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  vray,
+  unity,
+  sketchup,
+  illustrator,
+  threedmax,
+  corona,
+  substance,
+  photoshop,
+  unrealeng,
+  marvelous,
+  zbrush,
+  blender,
+  coreldraw,
+  hello,
+  response,
+  workme,
+  loveyou,
   carrent,
   jobit,
   tripguide,
+  whatsup,
+  telegram,
+  ru,
+  en,
+  ka,
 };

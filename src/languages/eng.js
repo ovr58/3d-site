@@ -129,13 +129,13 @@ const technologies = [
     name: 'Adobe Photoshop',
     icon: photoshop,
     anotation:
-      'Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1987 by Thomas and John Knoll. Since then, the software has become the most used tool for professional digital art, especially in raster graphics editing. The software`s name is often colloquially used as a verb (e.g. "to photoshop an image", "photoshopping", and "photoshop contest")[6] although Adobe discourages such use.',
+      'Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1987 by Thomas and John Knoll. Since then, the software has become the most used tool for professional digital art, especially in raster graphics editing. The software`s name is often colloquially used as a verb (e.g. "to photoshop an image", "photoshopping", and "photoshop contest") although Adobe discourages such use.',
   },
   {
     name: 'Adobe Illustrator',
     icon: illustrator,
     anotation:
-      'Development of Adobe Illustrator for the Apple Macintosh began in 1985[2] (shipping in January 1987) as a commercialization of Adobe`s in-house font development software and PostScript file format. Adobe Illustrator is the companion product of Adobe Photoshop. Photoshop is primarily geared toward digital photo manipulation and photorealistic styles of computer illustration, while Illustrator provides results in the typesetting and logo graphic areas of design.',
+      'Development of Adobe Illustrator for the Apple Macintosh began in 1985 (shipping in January 1987) as a commercialization of Adobe`s in-house font development software and PostScript file format. Adobe Illustrator is the companion product of Adobe Photoshop. Photoshop is primarily geared toward digital photo manipulation and photorealistic styles of computer illustration, while Illustrator provides results in the typesetting and logo graphic areas of design.',
   },
   {
     name: 'Corel Draw',
@@ -169,8 +169,8 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Step - №1',
     points: [
-      'Make your request, describe your task, what are your deadlines, budget demands.',
-      'Please make sure you have examples of similar work - photo of interior or others.',
+      'Make your request, describe your task, what are your deadlines and budget demands.',
+      'Please make sure you have examples of similar work: photo of a similar interior, models alike, buildings or others.',
       'If you need my consult only, feel free to ask for it.',
       'You can follow me on social media and contact me in messengers also.',
     ],
@@ -196,9 +196,9 @@ const experiences = [
     date: 'Step - №3',
     points: [
       'I am up to very wide spectrum of projects. Due to my professional connections I can quickly establish a team for almost any task.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality result.',
-      'Implementing original design and taking into account cultural and international diversity.',
-      'Solving technical issues and advising on all aspects of the work, providing constructive feedback to you and your team.',
+      'Collaborating with cross-functional teams including designers, programmers, and other professionals to create high-quality result.',
+      'We always implement original design and take into account cultural and international diversity.',
+      'Solve technical issues and advising on all aspects of a work, providing constructive feedbacks to you and your team.',
     ],
   },
   {
@@ -208,10 +208,10 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Step - №4',
     points: [
-      'Follow me on Boosty.to. You can get priority on your orders. Source files, support and consultations on an ongoing basis.',
+      'Follow me on Boosty.to. You can get free additional renders and priority on your orders. Source files, support and consultations on an ongoing basis.',
       'I provide considerable discounts for my subscribers on Virtual excursions, models and other addons to projects',
-      'Free fixes of finished works (the list applied to our agreement).',
-      'Press the icon and get all of benefits with your first order.',
+      'Free upgrades of finished works.',
+      'Press the link and get all of benefits with your first order.',
     ],
   },
 ];
@@ -338,7 +338,7 @@ const contact_text = {
   form_title_telega: 'Chat with me on Telegram!',
 };
 
-export {
+export default {
   contact_text,
   herotext,
   intro,

@@ -3,8 +3,12 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
-import { projects } from '../constants';
+import { localize } from '../utils/Translation';
 import { fadeIn, textVariant } from '../utils/motion';
+
+import PropTypes from 'prop-types';
+import { useContext, useMemo } from 'react';
+import { SiteLang } from '../LangContext';
 
 const ProjectCard = ({
   index,
@@ -20,7 +24,7 @@ const ProjectCard = ({
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className=" relative w-full h-[230px]">
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt={name}
@@ -55,22 +59,36 @@ const ProjectCard = ({
   );
 };
 
+ProjectCard.propTypes = {
+  index: PropTypes.number,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  tags: PropTypes.array,
+  image: PropTypes.string,
+  source_code_link: PropTypes.string,
+};
+
 const Works = () => {
+  const { lang } = useContext(SiteLang);
+
+  const work_text = useMemo(() => localize(lang, 'work_text'), [lang]);
+  const projects = useMemo(() => localize(lang, 'projects'), [lang]);
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={` ${styles.sectionSubText}`}>My work</p>
-        <h2 className={` ${styles.sectionHeadText}`}>Projects</h2>
+        <p className={` ${styles.sectionSubText}`}>
+          {work_text.my_work_header}
+        </p>
+        <h2 className={` ${styles.sectionHeadText}`}>
+          {work_text.my_work_header1}
+        </h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described and
-          live demos in it. It reflects my ability to solve complex problems,
-          work with different technologies, and manage projects effectively.
+          {work_text.my_work_intro}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

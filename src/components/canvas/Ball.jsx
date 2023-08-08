@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
@@ -27,9 +29,10 @@ const Ball = (props) => {
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
-          flatShading
+          scale={1}
           map={decal}
-        />{' '}
+          flatShading
+        />
       </mesh>
     </Float>
   );
@@ -37,7 +40,11 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      frameloop="demand"
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
@@ -46,4 +53,9 @@ const BallCanvas = ({ icon }) => {
     </Canvas>
   );
 };
+
+BallCanvas.propTypes = {
+  icon: PropTypes.string,
+};
+
 export default BallCanvas;

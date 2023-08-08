@@ -9,12 +9,20 @@ const SectionWrapper = (Component, idName) =>
       <motion.section
         variants={staggerContainer()}
         initial="hidden"
-        whileInView={'show'}
+        whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+        className={`container ${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
-        <span className="hash-span" id={idName}>
-          &nbsp;
+        <span style={{ display: 'inline' }} className="hash-span" id={idName}>
+          {idName === 'contact' ? (
+            ''
+          ) : (
+            <p>
+              <br />
+              <br />
+              <br />
+            </p>
+          )}
         </span>
         <Component />
       </motion.section>
