@@ -3,11 +3,15 @@ import backend from './backend.png';
 import creator from './creator.png';
 import mobile from './mobile.png';
 import web from './web.png';
-import github from './github.png';
+import boosty from './boosty.svg';
 import menu from './menu.svg';
 import close from './close.svg';
 import whatsup from './whatsup.svg';
 import telegram from './telegram.svg';
+
+import client1 from './client1.jpg';
+import client2 from './client2.jpg';
+import client3 from './client3.jpg';
 
 import vray from './tech/vray.png';
 import unity from './tech/unity.png';
@@ -28,9 +32,9 @@ import response from './response.png';
 import workme from './workme.png';
 import loveyou from './loveyou.png';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import cottage from './cottage.jpeg';
+import interior from './camera01.jpg';
+import kitchen from './kitchen.jpg';
 
 import ka from './ka.svg';
 import ru from './ru.svg';
@@ -42,7 +46,7 @@ export {
   creator,
   mobile,
   web,
-  github,
+  boosty,
   menu,
   close,
   vray,
@@ -62,12 +66,15 @@ export {
   response,
   workme,
   loveyou,
-  carrent,
-  jobit,
-  tripguide,
+  cottage,
+  interior,
+  kitchen,
   whatsup,
   telegram,
   ru,
   en,
   ka,
+  client1,
+  client2,
+  client3,
 };

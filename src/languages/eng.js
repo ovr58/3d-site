@@ -20,9 +20,12 @@ import {
   response,
   loveyou,
   coreldraw,
-  carrent,
-  jobit,
-  tripguide,
+  cottage,
+  interior,
+  kitchen,
+  client1,
+  client2,
+  client3,
 } from '../assets';
 
 const herotext = {
@@ -228,7 +231,7 @@ const testimonials = [
     name: 'Nazil Svanidze',
     designation: 'Designer',
     company: 'Self employed',
-    image: 'src/assets/client_nazil.jpg',
+    image: client1,
   },
   {
     testimonial:
@@ -236,7 +239,7 @@ const testimonials = [
     name: 'Evgeniy Sukharnikov ',
     designation: 'IE',
     company: 'Batumi Bottom',
-    image: 'src/assets/a459bc1f-9a6a-4b5b-aa00-a784beacba72.JPG',
+    image: client2,
   },
   {
     testimonial:
@@ -244,7 +247,7 @@ const testimonials = [
     name: 'Lisa Block',
     designation: 'CTO',
     company: 'First development',
-    image: 'src/assets/client_block.jpg',
+    image: client3,
   },
 ];
 
@@ -257,67 +260,74 @@ const work_text = {
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Cottage in every detail',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      "Detailed 3D model of a cottage based on an architectural project. Realistic rendering, for which the materials were carefully worked out to reflect the designer's intent and show the benefits of his ideas to a real client.",
     tags: [
       {
-        name: 'react',
+        name: 'cottage',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'exteriors',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'construction',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: cottage,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/b6fcb513-9dd5-4ec1-a993-1d2515a8567d?share=success_publish_link',
   },
   {
-    name: 'Job IT',
+    name: 'Interior for the client',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Visualization of the interior in the style of "boho", which demonstrates the atmosphere in the room after the proposed renovation. The combination of materials in finishes, furniture and décor, layering, colors and textures all create a dynamic and interesting space.',
     tags: [
       {
-        name: 'react',
+        name: 'interior',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'visualization',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'corona_render',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: interior,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/14c75d15-3b5a-4a81-b8d3-d0dafd8d537e?share=success_publish_link',
   },
   {
-    name: 'Trip Guide',
+    name: 'Kitchen modeling',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Modeling of kitchen furniture based on drawings and measurements of a real room. Selection of materials and their study in the interior of the client. Understanding the end result of installing expensive furniture in the kitchen interior, as well as clear space planning.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'modeling',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'furniture',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'kitchen',
         color: 'pink-text-gradient',
       },
+      {
+        name: '3d_development',
+        color: 'red-text-gradient',
+      },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: kitchen,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/42fa2b95-9661-43bf-93d3-ad570786f5b1?share=success_publish_link',
   },
 ];
 

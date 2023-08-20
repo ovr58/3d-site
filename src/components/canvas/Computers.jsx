@@ -10,21 +10,21 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
+      <hemisphereLight intensity={0.75} groundColor="black" />
+      <pointLight intensity={0.5} />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[20, 50, 100]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={0.51}
         castShadow
         shadow-mapSize={1024}
       />
       <primitive
         object={sceneObject.scene}
-        scale={isMobile ? 0.6 : 0.75}
-        position={isMobile ? [0, -2.7, -2] : [0, -3.8, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 0.15 : 0.35}
+        position={isMobile ? [0, -25.7, -2] : [0, -30.8, -1.5]}
+        rotation={[-0.06, -0.2, 0]}
       />
     </mesh>
   );
@@ -52,7 +52,7 @@ const ComputerCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 220, 20], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

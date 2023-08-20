@@ -59,7 +59,7 @@ const Footer = () => {
           </a> */}
 
           <a
-            href="https://instagram.com/nd_visualisation!"
+            href="https://instagram.com/nd_visualisation"
             type="button"
             className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-blue-900 focus:outline-none focus:ring-0"
             data-te-ripple-init
@@ -113,7 +113,7 @@ const Footer = () => {
 
       <div className="p-4 text-center bg-indigo-950">
         © 2023 Copyright:
-        <a className="text-whitehite" href="https://tailwind-elements.com/">
+        <a className="text-whitehite" href="">
           {' '}
           Nataly Dreams
         </a>

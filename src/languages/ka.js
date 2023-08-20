@@ -20,9 +20,12 @@ import {
   response,
   loveyou,
   coreldraw,
-  carrent,
-  jobit,
-  tripguide,
+  cottage,
+  interior,
+  kitchen,
+  client1,
+  client2,
+  client3,
 } from '../assets';
 
 const herotext = {
@@ -228,7 +231,7 @@ const testimonials = [
     name: 'ნაზილ სვანიძე',
     designation: 'დიზაინერი',
     company: 'Self employed',
-    image: 'src/assets/client_nazil.jpg',
+    image: client1,
   },
   {
     testimonial:
@@ -236,7 +239,7 @@ const testimonials = [
     name: 'ევგენი სუხარნიკოვი',
     designation: 'IE',
     company: 'Batumi Bottom',
-    image: 'src/assets/a459bc1f-9a6a-4b5b-aa00-a784beacba72.JPG',
+    image: client2,
   },
   {
     testimonial:
@@ -244,7 +247,7 @@ const testimonials = [
     name: 'ლიზა ბლოკი',
     designation: 'CTO',
     company: 'First development',
-    image: 'src/assets/client_block.jpg',
+    image: client3,
   },
 ];
 
@@ -257,67 +260,74 @@ const work_text = {
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'კოტეჯი ყველა დეტალში',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'კოტეჯის დეტალური 3D მოდელი, რომელიც დაფუძნებულია არქიტექტურულ პროექტზე. რეალისტური რენდერი, რომლისთვისაც მასალები საგულდაგულოდ იყო შემუშავებული, რათა ასახავდეს დიზაინერის განზრახვას და ეჩვენებინა მისი იდეების სარგებელი რეალური კლიენტისთვის.',
     tags: [
       {
-        name: 'react',
+        name: 'კოტეჯი',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'ექსტერიერები',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'მშენებლობა',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: cottage,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/b6fcb513-9dd5-4ec1-a993-1d2515a8567d?share=success_publish_link',
   },
   {
-    name: 'Job IT',
+    name: 'ინტერიერი კლიენტისთვის',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'ინტერიერის ვიზუალიზაცია "ბოჰოს" სტილში, რომელიც აჩვენებს ოთახში არსებულ ატმოსფეროს შემოთავაზებული რემონტის შემდეგ. მასალების კომბინაცია მოპირკეთებაში, ავეჯსა და დეკორში, ფენებს, ფერებსა და ტექსტურებს ქმნის დინამიურ და საინტერესო სივრცეს.',
     tags: [
       {
-        name: 'react',
+        name: 'ინტერიერი',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'ვიზუალიზაცია',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'corona_render',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: interior,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/14c75d15-3b5a-4a81-b8d3-d0dafd8d537e?share=success_publish_link',
   },
   {
-    name: 'Trip Guide',
+    name: 'სამზარეულოს მოდელირება',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'სამზარეულოს ავეჯის მოდელირება რეალური ოთახის ნახატებისა და გაზომვების საფუძველზე. მასალების შერჩევა და მათი შესწავლა კლიენტის ინტერიერში. სამზარეულოს ინტერიერში ძვირადღირებული ავეჯის დაყენების საბოლოო შედეგის გააზრება, ასევე სივრცის მკაფიო დაგეგმარება.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'მოდელირება',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'ავეჯი',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'სამზარეულო',
         color: 'pink-text-gradient',
       },
+      {
+        name: '3d_განვითარება',
+        color: 'red-text-gradient',
+      },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: kitchen,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/42fa2b95-9661-43bf-93d3-ad570786f5b1?share=success_publish_link',
   },
 ];
 

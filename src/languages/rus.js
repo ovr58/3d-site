@@ -20,9 +20,12 @@ import {
   response,
   loveyou,
   coreldraw,
-  carrent,
-  jobit,
-  tripguide,
+  cottage,
+  interior,
+  kitchen,
+  client1,
+  client2,
+  client3,
 } from '../assets';
 
 const herotext = {
@@ -54,7 +57,7 @@ const intro = {
   introheader1: ' Коротко обо мне',
   introheader2: 'Чем я занимаюсь',
   introtext:
-    'Я профессиональный 3D разработчик, с опытом работы в 3ds max, Blender,Unreal Engine и других средах. Я быстро учусь и щепетильна в отношении задач, которые ставит клиент. Поэтому я добиваюсь высококачественных визуализаций, отвечающих высоким стандартам и самым искушенным требованиям реального мира. Обратитесь ко мне и вместе мы воплотим Ваши мечты и идеи в жизнь! ',
+    'Я профессиональный 3D разработчик, с опытом работы в 3ds max, Blender,Unreal Engine и других средах. Я быстро учусь и щепетильна в отношении задач, которые ставит клиент. Поэтому я добиваюсь высококачественных визуализаций, отвечающих высоким стандартам и самым искушенным требованиям реального мира. Обратитесь ко мне и вместе мы воплотим Ваши мечты и идеи в жизнь!',
 };
 
 const services = [
@@ -163,8 +166,8 @@ const support_me = 'Поддержи меня!';
 
 const experiences = [
   {
-    title: 'Выйди на связь.',
-    action_name: 'Используй форму ниже',
+    title: 'Напишите мне.',
+    action_name: 'Воспользуйтесь формой ниже',
     icon: hello,
     iconBg: '#E6DEDD',
     date: 'Шаг - №1',
@@ -202,8 +205,8 @@ const experiences = [
     ],
   },
   {
-    title: 'Подпишись',
-    action_name: 'Get benefits and addons',
+    title: 'Подпишитесь!',
+    action_name: 'Получите преимущества и подарки!',
     icon: loveyou,
     iconBg: '#E6DEDD',
     date: 'Step - №4',
@@ -228,7 +231,7 @@ const testimonials = [
     name: 'Назиль Сванидзе',
     designation: 'Дизайнер',
     company: 'Предприниматель',
-    image: 'src/assets/client_nazil.jpg',
+    image: client1,
   },
   {
     testimonial:
@@ -236,7 +239,7 @@ const testimonials = [
     name: 'Евгений Сухарников',
     designation: 'ИП',
     company: 'Batumi Bottom',
-    image: 'src/assets/a459bc1f-9a6a-4b5b-aa00-a784beacba72.JPG',
+    image: client2,
   },
   {
     testimonial:
@@ -244,7 +247,7 @@ const testimonials = [
     name: 'Лиза Блок',
     designation: 'тех. директор',
     company: 'First Development',
-    image: 'src/assets/client_block.jpg',
+    image: client3,
   },
 ];
 
@@ -257,67 +260,74 @@ const work_text = {
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Коттедж во всех деталях',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Подробная 3D модель коттеджа, основанная на архитектурном проекте. Реалистичный рендер, для которого особо тщательно были проработаны материалы, чтобы отразить замысел дизайнера и показать преимущества его идей реальному клиенту.',
     tags: [
       {
-        name: 'react',
+        name: 'коттедж',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'экстерьеры',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'строительство',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: cottage,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/b6fcb513-9dd5-4ec1-a993-1d2515a8567d?share=success_publish_link',
   },
   {
-    name: 'Job IT',
+    name: 'Интерьер для клиента',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Визуализация интерьера в стиле "бохо", которая демонстрирует атмосферу в помещении после предполагаемого ремонта. Сочетание материалов в отделке, мебели и декоре, наложение слоев, цветов и текстур - все создает динамичное и интересное пространство.',
     tags: [
       {
-        name: 'react',
+        name: 'интерьер',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'визуализация',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'корона_рендер',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: interior,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/14c75d15-3b5a-4a81-b8d3-d0dafd8d537e?share=success_publish_link',
   },
   {
-    name: 'Trip Guide',
+    name: 'Моделирование кухни',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Моделинг кухонной мебели на основе чертежей и замеров реального помещения. Подбор материалов и их проработка в интерьере клиента. Понимание конечного результата установки в интерьер кухни дорогостоящей мебели, а так же четкое планирование пространства.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'моделирование',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'мебель',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'кухня',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: '3d_разработка',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: kitchen,
+    source_code_link:
+      'https://boosty.to/3dnataly/posts/42fa2b95-9661-43bf-93d3-ad570786f5b1?share=success_publish_link',
   },
 ];
 
@@ -325,7 +335,7 @@ const contact_text = {
   alert_message_sent: 'Спасибо! Я свяжусь с Вами в кратчайшее время!',
   alert_message_wrong:
     'Что-то поломалось, воспользуйтесь другими средствами связи.',
-  get_in_touch: 'Будь на связи',
+  get_in_touch: 'На связи',
   contact_text: 'Запрос.',
   form_your_name: 'Ваше Имя',
   form_your_name_placeholder: 'Как к Вам обращаться?*',
