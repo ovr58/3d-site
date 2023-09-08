@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx}'],
+  content: [
+    './renderer/**/*.{vue,js,ts,jsx,tsx}',
+    './pages/**/*.{vue,js,ts,jsx,tsx}',
+  ],
   mode: 'jit',
   theme: {
     extend: {
@@ -20,7 +23,7 @@ module.exports = {
         timelinetoggle: '1170px',
       },
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/herobg.png')",
+        'hero-pattern': "url('/pages/assets/herobg.png')",
       },
     },
   },

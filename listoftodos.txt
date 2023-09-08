@@ -13,5 +13,13 @@
 Add attachment function to the contact form
 Add captcha to the contact form
 (X) Make annotations to dev instruments (popups or just tag prop)
-SEO optimisation
-Publishing
+(X) Publishing
+(X) SSR Pre-render
+SEO optimisation check on SEO 
+Ошибки в браузерах (ссылки и прочее)
+(X) Установить метрики, индексация
+Ссылку на твиттер
+(X) Исправить скроллинг на мобильном (домик на задний план)
+(X) Исправить ошибки 418 и 423
+(X) Файлы robot.txt sitemap
+Оптимизация коттеджа или замена на другой или делаем крышу плоской с текстурой черепицы
