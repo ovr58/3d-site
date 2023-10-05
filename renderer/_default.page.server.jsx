@@ -2,21 +2,21 @@ export { render };
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = ['pageProps', 'urlPathname'];
 
-import ReactDOMServer from 'react-dom/server';
-import { PageShell } from './PageShell';
+// import ReactDOMServer from 'react-dom/server';
+// import { PageShell } from './PageShell';
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr/server';
 import logoUrl from './logo.svg';
 
 async function render(pageContext) {
-  const { Page, pageProps } = pageContext;
-  // This render() hook only supports SSR, see https://vite-plugin-ssr.com/render-modes for how to modify render() to support SPA
-  if (!Page)
-    throw new Error('My render() hook expects pageContext.Page to be defined');
-  const pageHtml = ReactDOMServer.renderToString(
-    <PageShell pageContext={pageContext}>
-      <Page {...pageProps} />
-    </PageShell>
-  );
+  // const { Page, pageProps } = pageContext;
+  // // This render() hook only supports SSR, see https://vite-plugin-ssr.com/render-modes for how to modify render() to support SPA
+  // if (!Page)
+  //   throw new Error('My render() hook expects pageContext.Page to be defined');
+  // const pageHtml = ReactDOMServer.renderToString(
+  //   <PageShell pageContext={pageContext}>
+  //     <Page {...pageProps} />
+  //   </PageShell>
+  // );
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports;
@@ -61,13 +61,12 @@ async function render(pageContext) {
           </script>
             <noscript><div><img src="https://mc.yandex.ru/watch/94865908" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
-      <div id="react-root">${dangerouslySkipEscape(pageHtml)}</div>
+      <div id="react-root"></div>
       </body>
     </html>`;
 
   return {
     documentHtml,
-    pageContext: {},
   };
 }
 // ${dangerouslySkipEscape(pageHtml)}

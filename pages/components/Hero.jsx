@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute z-10 inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -31,9 +31,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <MyModelCanvas />
+      <MyModelCanvas className="z-0" />
 
-      <div className="absolute xs:bottom-0  w-full flex sm:justify-end justify-center">
+      <div className="absolute z-20 xs:bottom-0  w-full flex sm:justify-end justify-center">
         <a href="#about" aria-label="To the About section of the site">
           <div className="w-[64px] h-[64px] rounded-full border-4 border-violet-500  p-2 animate-bounce">
             <svg

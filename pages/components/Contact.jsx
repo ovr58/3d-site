@@ -97,6 +97,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder={contact_text.form_your_name_placeholder}
+              autoComplete="on"
               className="bg-tertiary py-4 px-6  text-white rounded-lg outline-none border-none font-medium placeholder:text-red-800"
               required
             />
@@ -111,6 +112,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder={contact_text.form_your_email_placeholder}
+              autoComplete="on"
               className="bg-tertiary py-4 px-6  text-white rounded-lg outline-none border-none font-medium placeholder:text-red-800"
               required
             />

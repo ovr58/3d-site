@@ -26,7 +26,9 @@ function Page() {
       </div>
       <About />
       <Experience />
-      <Tech />
+      <div className="relative z-0">
+        <Tech />
+      </div>
       <Works />
       <Feedbacks />
       <div className="relative z-0">

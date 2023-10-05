@@ -2,15 +2,8 @@ import TypeProps from 'prop-types';
 
 import * as THREE from 'three';
 import { useRef } from 'react';
-import { Canvas, extend, useFrame, useLoader } from '@react-three/fiber';
-import { Effects } from '@react-three/drei';
-import {
-  FilmPass,
-  WaterPass,
-  UnrealBloomPass,
-  LUTPass,
-  LUTCubeLoader,
-} from 'three-stdlib';
+import { Canvas, extend, useFrame } from '@react-three/fiber';
+import { FilmPass, WaterPass, UnrealBloomPass, LUTPass } from 'three-stdlib';
 
 import temp from './starscoordinats';
 
@@ -91,20 +84,6 @@ Sphere.propTypes = {
   emissive: TypeProps.string,
 };
 
-function Postpro() {
-  const water = useRef();
-  const data = useLoader(LUTCubeLoader, '/cubicle.CUBE');
-  useFrame((state) => (water.current.time = state.clock.elapsedTime * 4));
-  return (
-    <Effects disableGamma>
-      <waterPass ref={water} factor={0.3} />
-      <unrealBloomPass args={[undefined, 0.3, 0.3, 0]} />
-      <filmPass args={[0.2, 0.5, 1500, false]} />
-      <lUTPass lut={data.texture} intensity={0.75} />
-    </Effects>
-  );
-}
-
 const StarsCanvas = () => {
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
@@ -132,7 +111,6 @@ const StarsCanvas = () => {
           />
         </mesh>
         <Swarm count={20000} />
-        <Postpro />
       </Canvas>
     </div>
   );

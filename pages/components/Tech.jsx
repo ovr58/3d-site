@@ -1,39 +1,45 @@
-import { BallCanvas } from './canvas';
-import { SectionWrapper } from '../hoc';
-import { localize } from '../utils/Translation';
 import { useContext, useMemo, useState } from 'react';
+import { SectionWrapper } from '../hoc';
+
+import { NewBalls } from './canvas';
+
+import { localize } from '../utils/Translation';
 import { SiteLang } from '../LangContext';
 
 const Tech = () => {
   const { lang } = useContext(SiteLang);
 
-  const [pressed, setPressed] = useState(0);
+  const [selected, setSelected] = useState(-1);
 
   const technologies = useMemo(() => localize(lang, 'technologies'), [lang]);
 
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology, index) => (
-        <div
-          className="w-28 h-28 hover:animate-pulse"
-          key={technology.name}
-          onClick={() => setPressed(index)}
-        >
-          <BallCanvas
-            icon={technology.icon}
-            card={technology.anotation}
-            name={technology.name}
-          />
+    <div className="w-full  h-screen content-center">
+      {selected >= 0 ? (
+        <div className="absolute z-10 rounded-lg bg-tertiary p-6 shadow-white">
+          <div className="flex items-center justify-between">
+            <h5 className="mb-2 text-xl text-white font-medium">
+              {technologies[selected].name}
+            </h5>
+            <button
+              type="button"
+              className="mb-2 z-10 w-fit p-2 bg-tertiary rounded-full"
+              onClick={() => setSelected(-1)}
+            >
+              <h3 className="font-bold text-white">x</h3>
+            </button>
+          </div>
+          <p className="mb-4 text-base text-white">
+            {technologies[selected].anotation}
+          </p>
         </div>
-      ))}
-      <div className="rounded-lg bg-tertiary p-6 shadow-black dark:bg-neutral-900">
-        <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          {technologies[pressed].name}
-        </h5>
-        <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-          {technologies[pressed].anotation}
-        </p>
-      </div>
+      ) : (
+        ''
+      )}
+      <NewBalls
+        toggle={selected}
+        selectItem={(useSelectedItem) => setSelected(useSelectedItem)}
+      />
     </div>
   );
 };
